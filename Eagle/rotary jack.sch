@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -143,10 +143,6 @@
 <smd name="P$11" x="5.5" y="-8" dx="2.2" dy="2.2" layer="1" rot="R90"/>
 </package>
 <package name="MALEHEADPHONE">
-<pad name="LEFT" x="-1.5" y="0" drill="1.1" diameter="1.27"/>
-<pad name="RIGHT" x="0" y="0" drill="1.1" diameter="1.27"/>
-<pad name="GND" x="1.5" y="0" drill="1.1" diameter="1.27"/>
-<pad name="MIC" x="3" y="0" drill="1.1" diameter="1.27"/>
 <wire x1="-2.54" y1="1.27" x2="4.445" y2="1.27" width="0.127" layer="21"/>
 <wire x1="4.445" y1="1.27" x2="4.445" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="4.445" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
@@ -165,6 +161,14 @@
 <wire x1="-12.7" y1="0.635" x2="-12.7" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-10.16" y1="0.635" x2="-10.16" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.127" layer="21"/>
+<smd name="RIGHT" x="0" y="0" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
+<smd name="GND" x="1.5" y="0" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
+<smd name="MIC" x="3" y="0" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
+<smd name="LEFT" x="-1.5" y="0" dx="1.778" dy="0.9144" layer="1" rot="R90"/>
+<hole x="-1.5" y="0" drill="1"/>
+<hole x="3" y="0" drill="1"/>
+<hole x="0" y="0" drill="1"/>
+<hole x="1.5" y="0" drill="1"/>
 </package>
 </packages>
 <symbols>
@@ -754,7 +758,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="109.22" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <pinref part="GND" gate="G$1" pin="1"/>
